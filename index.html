@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Crop Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/cropperjs/dist/cropper.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Image Crop Editor</h1>
+
+  <input type="file" id="upload" accept="image/*">
+
+  <div class="editor">
+    <img id="image" />
+  </div>
+
+  <div class="controls">
+    <button id="cropBtn">Crop</button>
+    <button id="resetBtn">Reset</button>
+    <a id="downloadBtn" download="cropped-image.png">Download</a>
+  </div>
+
+  <canvas id="canvas"></canvas>
+</div>
+
+<script src="https://unpkg.com/cropperjs/dist/cropper.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
